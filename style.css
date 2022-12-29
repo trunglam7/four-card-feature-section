@@ -1,0 +1,146 @@
+:root{
+    --builder: hsl(0, 78%, 62%);
+    --supervisor: hsl(180, 62%, 55%);
+    --karma: hsl(34, 97%, 64%);
+    --calculator: hsl(212, 86%, 64%);
+
+    --h-color: hsl(234, 12%, 34%);
+    --p-color: hsl(229, 6%, 66%);
+    --main-background: hsl(0, 0%, 98%);
+
+    --main-font: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--main-font);
+    font-size: 15px;
+    color: var(--h-color);
+    background-color: var(--main-background);
+}
+
+h1 span{
+    display: block;
+    font-weight: 200;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 2.4em;
+}
+
+p{
+    color: var(--p-color);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.img-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+main section{
+    background-color: white;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 10px hsla(229, 6%, 66%, 0.2);
+    padding: 27px 30px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 75px;
+}
+
+.center-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+h2{
+    font-size: 1.3em;
+    margin-bottom: 12px;
+}
+
+section p{
+    font-size: .875em;
+    margin-bottom: 47px;
+    padding-right: 20px;
+}
+
+.feature-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 75px;
+}
+
+.feature-container > p{
+    max-width: 500px;
+}
+
+.line{
+    border-top-style: solid;
+    border-width: 5px;
+    margin: -27px -30px 0px -30px;
+    margin-bottom: 25px;
+}
+
+.supervisor-container .line{
+    border-color: var(--supervisor);
+}
+
+.builder-container .line{
+    border-color: var(--builder);
+}
+
+.karma-container .line{
+    border-color: var(--karma);
+}
+
+.calculator-container .line{
+    border-color: var(--calculator);
+}
+
+@media screen and (max-width: 700px) {
+    .card-container{
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    
+    .feature-container{
+        margin: 80px 32px;
+    }
+
+    .center-container{
+        row-gap: 25px;
+    }
+
+    section p{
+        margin-bottom: 20px;
+        font-size: .875em;
+        padding-right: 0px;
+    }
+
+    h1{
+        font-size: 1.6em;
+    }
+
+}
